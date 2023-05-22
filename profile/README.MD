@@ -16,6 +16,9 @@ graph TD
 
     RD[(Cache server)] <--> B & C & D & E
 
+    ARB[(Artist DB)] --> SP
+    TDB[(Track DB)] --> SP 
+    PDB[(Playlist DB)] --> SP
     SP([Spotify GC-1]) -->
     A(Protocol v2-dev) <--> B(KenaBot) --> NM
     A <--> C(KenaBot 2) --> NM
